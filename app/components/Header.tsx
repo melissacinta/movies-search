@@ -7,25 +7,11 @@ const Header = () => {
       <Link href="/" className="text-xl font-medium ">
         Movie App
       </Link>
-      <nav className="flex gap-4 flex-1 items-center flex-col sm:flex-row">
-        <div className="flex gap-4 flex-1 items-center">
-          {' '}
-          <Link href="/movies/upcoming" className="hover:text-primary">
-            Upcoming
-          </Link>
-          <Link href="/movies/popular" className="hover:text-primary">
-            Popular
-          </Link>
-          <Link
-            href="/movies/top-rated"
-            className="hover:text-primary flex-shrink-0"
-          >
-            Top Rated
-          </Link>
-        </div>
+      <nav className="flex gap-4 ml-auto items-center">
         <div className="ml-auto">
           <SearchBox />
         </div>
+        <Link href="/login">Login</Link>
       </nav>
     </header>
   );

@@ -4,44 +4,33 @@ import React from 'react';
 import { EMPTY_MOVIE_URL, IMAGE_URL } from '../config';
 
 export interface IMovieCard {
-  id: number;
-  title: string;
-  poster_path: string;
-  vote_average: number;
-  overview: string;
-  vote_count?: number;
+  imdbID: string;
+  Title: string;
+  Year: string;
+  Type: number;
+  Poster: string;
 }
 
 const MovieCard = ({ movie }: { movie: IMovieCard }) => {
   return (
     <Link
-      href={`/movie/${movie?.id}`}
+      href={`/movie/${movie?.imdbID}`}
       className="w-full flex flex-col sm:shadow-md cursor-pointer sm:hover:shadow"
     >
       <div className="w-full h-[400px] relative">
         <Image
-          src={
-            movie?.poster_path
-              ? `${IMAGE_URL}${movie?.poster_path}`
-              : `${EMPTY_MOVIE_URL}`
-          }
-          alt={movie?.title}
+          src={movie?.Poster ? movie.Poster : `${EMPTY_MOVIE_URL}`}
+          alt={movie?.Title}
           fill={true}
           sizes="100vw"
         />
       </div>
       <div className="flex gap-4 justify-between items-center mt-3 px-2 pb-2 bg-red">
-        <h3 className="text-md font-medium">{movie?.title}</h3>
+        <h3 className="text-md font-medium">{movie?.Title}</h3>
         <span
-          className={`flex flex-col p-2 text-white rounded-md ${
-            movie?.vote_average < 5
-              ? `bg-red-700`
-              : movie?.vote_average == 5
-              ? `bg-orange-700`
-              : `bg-green-700`
-          }`}
+          className={`flex flex-col p-2 text-white rounded-md bg-green-700`}
         >
-          {movie?.vote_average}
+          {movie?.Year}
         </span>
       </div>
     </Link>

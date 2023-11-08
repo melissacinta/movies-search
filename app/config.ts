@@ -6,3 +6,12 @@ export const EMPTY_MOVIE_URL =
 export function classNames(...classes: string[]): string {
   return classes.filter(Boolean).join(' ');
 }
+
+export const url = 'https://movie-database-alternative.p.rapidapi.com/';
+export const options = {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': process.env.MD_API_KEY,
+    'X-RapidAPI-Host': 'movie-database-alternative.p.rapidapi.com',
+  },
+};
