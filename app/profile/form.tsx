@@ -21,7 +21,7 @@ export default function ProfileForm() {
       <Formik
         initialValues={{
           name: session?.user?.name,
-          phone: session?.user?.phone,
+          phone: '',
           email: session?.user?.email,
         }}
         validationSchema={updateSchema}

@@ -50,6 +50,11 @@ const handler = NextAuth({
       if (trigger === 'update') {
         token = { ...token, ...user };
       }
+      if (trigger === 'update' && session) {
+        // Note, that `session` can be any arbitrary object, remember to validate it!
+        console.log(session);
+        token.phone = session.phone;
+      }
       console.log(token);
       return token;
     },
