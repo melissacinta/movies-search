@@ -3,9 +3,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ### Home Screen
 <img width="960" alt="image" src="https://github.com/melissacinta/movies-search/assets/18717315/4af6bf75-2389-48ff-adec-11e8a4c9c280">
 ### Login Screen
-<img width="960" alt="image" src="https://github.com/melissacinta/movies-search/assets/18717315/1e769200-8d19-4b52-90bc-fccd6e4ef272">
+<img width="960" alt="image" src="https://github.com/melissacinta/movies-search/assets/18717315/126586dd-5ac8-49f8-b123-d8bb0e0e457a">
 ### Register Screen
-![image](https://github.com/melissacinta/movies-search/assets/18717315/10fca658-eed9-47aa-8e2b-80914e4f123b)
+<img width="960" alt="image" src="https://github.com/melissacinta/movies-search/assets/18717315/1e769200-8d19-4b52-90bc-fccd6e4ef272">
 ### Profile Screen
 <img width="960" alt="image" src="https://github.com/melissacinta/movies-search/assets/18717315/88fef157-6b81-4a16-831d-7a13e1516004">
 
