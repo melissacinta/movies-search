@@ -21,7 +21,7 @@ async function getMovieDetails(id: IMovieCard['imdbID']) {
   return res.json();
 }
 
-const page = async ({ params }: IParamsMovieDetails) => {
+const MoviePage = async ({ params }: IParamsMovieDetails) => {
   const { id } = params;
   const movie = await getMovieDetails(id);
 
@@ -129,4 +129,4 @@ const page = async ({ params }: IParamsMovieDetails) => {
   );
 };
 
-export default page;
+export default MoviePage;

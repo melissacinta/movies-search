@@ -1,3 +1,4 @@
+import * as yup from 'yup';
 export const IMAGE_URL = 'https://image.tmdb.org/t/p/original';
 
 export const EMPTY_MOVIE_URL =
@@ -15,3 +16,26 @@ export const options = {
     'X-RapidAPI-Host': 'movie-database-alternative.p.rapidapi.com',
   },
 };
+const passwordRules = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}$/;
+export const registerSchema = yup.object().shape({
+  name: yup.string().required('Required'),
+  phone: yup.string(),
+  email: yup.string().email('must be valid email address'),
+  password: yup
+    .string()
+    .matches(passwordRules, {
+      message:
+        'Please must be at least 5 character long and contain at least 1 number, 1 uppercase and 1 lowercase letters',
+    })
+    .required('Required'),
+  passwordConfirmation: yup
+    .string()
+    .oneOf([yup.ref('password')], 'Passwords must match')
+    .required('Required'),
+});
+
+export const updateSchema = yup.object().shape({
+  name: yup.string().required('Required'),
+  phone: yup.string(),
+  email: yup.string().email('must be valid email address'),
+});
