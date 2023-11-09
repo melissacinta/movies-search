@@ -20,9 +20,9 @@ export default function ProfileForm() {
     <>
       <Formik
         initialValues={{
-          name: session?.user?.name,
+          name: session?.user?.name || '',
           phone: '',
-          email: session?.user?.email,
+          email: session?.user?.email || '',
         }}
         validationSchema={updateSchema}
         onSubmit={handleUpdateProfile}
