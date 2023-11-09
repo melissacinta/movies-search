@@ -58,7 +58,6 @@ export default function RegisterForm() {
             type="password"
             placeholder="*************"
           />
-
           <div className="mt-auto">
             <button
               type="submit"

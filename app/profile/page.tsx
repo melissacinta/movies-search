@@ -12,17 +12,6 @@ export default function ProfilePAge() {
       </div>
 
       <ProfileForm />
-      <div className="mt-10">
-        <p className=" font-semibold text-red-500 mb-2">
-          Proceed with caution! this cannot be undone
-        </p>
-        <button
-          type="submit"
-          className="w-full py-2 px-5 text-md font-bold text-red-500 border border-red-500"
-        >
-          Delete Account
-        </button>
-      </div>
     </div>
   );
 }
