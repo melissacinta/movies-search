@@ -1,6 +1,27 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## TODO
+- [ ] IMplement Delete functionality
+- [ ] Add Loading State indicators
+- [ ] App Toast notifications
+
+## App ScreenShots
+
+### Home Screen
+<img width="960" alt="image" src="https://github.com/melissacinta/movies-search/assets/18717315/4af6bf75-2389-48ff-adec-11e8a4c9c280">
+
+### Login Screen
+<img width="960" alt="image" src="https://github.com/melissacinta/movies-search/assets/18717315/126586dd-5ac8-49f8-b123-d8bb0e0e457a">
+
+### Register Screen
+<img width="960" alt="image" src="https://github.com/melissacinta/movies-search/assets/18717315/1e769200-8d19-4b52-90bc-fccd6e4ef272">
+
+### Profile Screen
+<img width="960" alt="image" src="https://github.com/melissacinta/movies-search/assets/18717315/88fef157-6b81-4a16-831d-7a13e1516004">
+
 ## Getting Started
+
+This project uses postgres database hosted on vercel edit the .env.example file to get started
 
 First, run the development server:
 
@@ -18,7 +39,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font
+
+## Folder Structure
+<img width="184" alt="image" src="https://github.com/melissacinta/movies-search/assets/18717315/fd34013b-5fd7-42f8-89f3-ee4f60860e58">
 
 ## Learn More
 
