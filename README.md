@@ -21,6 +21,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+This project uses postgres database hosted on vercel edit the .env.example file to get started
+
 First, run the development server:
 
 ```bash
