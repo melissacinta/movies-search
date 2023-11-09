@@ -3,8 +3,10 @@
 import CustomInput from '../components/CustomInput';
 import { Form, Formik } from 'formik';
 import { registerSchema } from '../config';
+import { useRouter } from 'next/navigation';
 
 export default function RegisterForm() {
+  const router = useRouter();
   const handleSignUp = async (values: any, actions: any) => {
     const { passwordConfirmation, ...others } = values;
     const response = await fetch('/api/auth/register', {
@@ -12,6 +14,8 @@ export default function RegisterForm() {
       body: JSON.stringify(others),
     });
     console.log(response);
+    router.push('/login');
+    router.refresh();
     actions.resetForm();
   };
   return (

@@ -13,7 +13,7 @@ export default function ProfileForm() {
       body: JSON.stringify(values),
     });
     console.log({ response });
-    update();
+    await update();
   };
   console.log({ session });
   return (
@@ -56,7 +56,7 @@ export default function ProfileForm() {
                 disabled={isSubmitting}
                 className="w-full py-2 px-5 bg-slate-800 text-md font-normal text-white"
               >
-                Update Profile
+                {isSubmitting ? 'Loading...' : 'Update Profile'}
               </button>
             </div>
           </Form>
