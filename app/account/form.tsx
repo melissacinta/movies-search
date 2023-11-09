@@ -68,7 +68,7 @@ export default function RegisterForm() {
               disabled={isSubmitting}
               className="w-full py-2 px-5 bg-slate-800 text-md font-normal text-white"
             >
-              Register
+              {isSubmitting ? 'Loading...' : 'Register'}
             </button>
           </div>
         </Form>

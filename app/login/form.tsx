@@ -61,7 +61,7 @@ export default function LoginForm() {
               disabled={isSubmitting}
               className="w-full py-2 px-5 bg-slate-800 text-md font-normal text-white"
             >
-              Log in
+              {isSubmitting ? 'Loading...' : 'Log in'}
             </button>
           </div>
         </Form>
